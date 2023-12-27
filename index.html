@@ -1,3 +1,39 @@
+<!DOCTYPE html>
 <html>
-  <h1>Emiliano Roberti</h1>
+  <head>
+    <title>Surprise Selector</title>
+    <style>
+      .option {
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        background: #f0f0f0;
+        cursor: pointer;
+        border: 1px solid #ddd;
+      }
+      .option:hover {
+        background: #e9e9e9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Rosa .. what is your present?</h1>
+    <div id="options">
+      <div class="option" onclick="chooseOption(1)">Trainers</div>
+      <div class="option" onclick="chooseOption(2)">Holiday</div>
+      <div class="option" onclick="chooseOption(3)">Accountancy Course</div>
+    </div>
+
+    <script>
+      function chooseOption(selected) {
+        // Let's say option 2 is the correct one
+        if (selected === 2) {
+          // Redirect to a new URL
+          window.location.href = './page2.html';
+        } else {
+          alert("Try again! That's not the right surprise.");
+        }
+      }
+    </script>
+  </body>
 </html>
