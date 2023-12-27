@@ -14,13 +14,14 @@
       }
 
       #options {
-        max-width: 300px;
+        max-width: 90%;
         margin: 20px auto;
       }
 
       .option {
-        display: block; /* Change to block to list vertically */
-        padding: 15px;
+        display: block; /* list items vertically */
+        width: 100%; /* make button stretch to container width */
+        padding: 20px; /* larger padding */
         margin: 10px 0;
         background: #f9f9f9;
         color: #333;
@@ -29,7 +30,8 @@
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         transition: background 0.3s, box-shadow 0.3s;
-        font-size: 18px;
+        font-size: 20px; /* larger text */
+        text-transform: uppercase; /* optional: makes it look more button-like */
       }
 
       .option:hover {
@@ -46,6 +48,12 @@
       <button class="option" onclick="chooseOption(3)">
         Accountancy Course
       </button>
+      <button class="option" onclick="chooseOption(4)">Spa Day</button>
+      <button class="option" onclick="chooseOption(5)">lip gloss</button>
+      <button class="option" onclick="chooseOption(5)">
+        alarm clock to not be late
+      </button>
+      <button class="option" onclick="chooseOption(5)">Bag</button>
     </div>
 
     <script>
